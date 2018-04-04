@@ -1,4 +1,4 @@
-var gamesList = ['persona', 'metal gear', 'bastion']
+var gamesList = ['persona', 'metal gear', 'Bioshock']
 
 var chosenWord = '';
 
