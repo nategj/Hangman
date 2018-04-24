@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>Games Hangman</title>
+	<!-- Bootstram CDN -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	<!-- Bootstrap container that will hold everything -->
 	<div class="container">
+		<!-- Jumbotron holds the title section -->
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Games Hangman</h1>
@@ -15,39 +18,45 @@
 			</div>
 		</div>
 	</div>
+	<!-- Game counters held here. Oanels are used to hold the section -->
 	<div class='row'>
 		<div class="col-lg-12">
+			<!-- First panel : Holds the word to Guess (blanks and guessed word) -->
 			<div class="panel panel-default">
 				<div class='panel-heading'>
 					<h3 class="panel-title"><strong>Word to Guess</strong></h3>
 				</div>
-					<div class="panel-body">			
+					<div class="panel-body">	
+					<!-- shows the blank question until number guesses -->		
 					<h3 id='word-blanks'>_ _ _ _ _ _ _ _ _</h3>
 				</div>
 			</div>
 			<div class='panel panel-default'>
 				<div class="panel-body"></div>
+				<!-- shows the wrong guesses -->
 				<strong>Wrong Guesses: </strong> <span id='wrong-guesses'></span>
 			</div>
 			<div class='panel panel-default'>
 				<div class="panel-body"></div>
+				<!-- Shows guesses left -->
 				<strong>Guesses Left: </strong> <span id='guesses-left'>9</span>
 			</div>
 			<div class='panel panel-default'>
 				<div class="panel-body"></div>
+				<!-- shows number of wins -->
 				<strong>Wins: </strong> <span id='win-counter'>0</span>
 			</div>
 			<div class='panel panel-default'>
 				<div class="panel-body"></div>
+				<!-- shows number of losses -->
 				<strong>Losses: </strong> <span id='loss-counter'>0</span>
 			</div>
 		</div>
 	</div>
 
 
-
+<!-- adds a link to the java script file. It is loaded at the bottom so that it waits for the HTML content to display first, if you put this link at the top it will crash because the HTML IDs wont exist yet -->
 	<script src='logic.js'> </script>
-
 	
 
 </body>

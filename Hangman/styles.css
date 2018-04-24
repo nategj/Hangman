@@ -1,6 +1,6 @@
 div {
    
-	color:black;
+	color:#E91E63;
 }
 .jumbotron {
 background-image: url("https://yepdownload.com/storage/screens/legend-of-zelda-links-awakening/legend-of-zelda-links-awakening-001.jpg");
@@ -12,18 +12,10 @@ body {
   height: 120px;
   */
 }
-.container {
-	font-weight:bold;
-	color:black;
-}
-.cover {
-  width: 260px;
-  object-fit: cover;
-}
-}
+
 h3 {
 	color:blue;
 }
 h2{
-	color:black;
+	color:#E91E63;
 }
